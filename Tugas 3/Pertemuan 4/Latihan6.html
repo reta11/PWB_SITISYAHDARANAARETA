@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <h1 align="center">Kalkulator</h1>
+    <div align="center">
+        <form>
+            <table border="1" cellpadding="10">
+                <tr>
+                    <td>Nilai 1</td>
+                    <td>:</td>
+                    <td><input type="number" id="nilai1" name="nilai1"></td>
+                </tr>
+                <tr>
+                    <td>Nilai 2</td>
+                    <td>:</td>
+                    <td><input type="number" id="nilai2" name="nilai2"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center;">
+                        <input type="button" onclick="tambah()" value="+">
+                        <input type="button" onclick="kurang()" value="-">
+                        <input type="button" onclick="kali()" value="*">
+                        <input type="button" onclick="bagi()" value="/">
+                        <input type="button" onclick="pangkat()" value="^">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hasil</td>
+                    <td>:</td>
+                    <td><span id="hasil"></span></td>
+                </tr>
+                
+            </table>
+        </form>
+    </div>
+    <script>
+        function tambah(){
+            var nilai1 = document.getElementById('nilai1').value
+            var nilai2 = document.getElementById('nilai2').value
+            var hasil = parseFloat(nilai1) +   parseFloat(nilai2);
+            document.getElementById('hasil').innerHTML = hasil
+        }
+        function kurang(){
+            var nilai1 = document.getElementById('nilai1').value
+            var nilai2 = document.getElementById('nilai2').value
+            var hasil = parseFloat(nilai1) -   parseFloat(nilai2);
+            document.getElementById('hasil').innerHTML = hasil
+        }
+        function kali(){
+            var nilai1 = document.getElementById('nilai1').value
+            var nilai2 = document.getElementById('nilai2').value
+            var hasil = parseFloat(nilai1) *   parseFloat(nilai2);
+            document.getElementById('hasil').innerHTML = hasil
+        }
+        function bagi(){
+            var nilai1 = document.getElementById('nilai1').value
+            var nilai2 = document.getElementById('nilai2').value
+            var hasil = parseFloat(nilai1) /   parseFloat(nilai2);
+            document.getElementById('hasil').innerHTML = hasil
+        }
+        function pangkat(){
+            var nilai1 = document.getElementById('nilai1').value
+            var nilai2 = document.getElementById('nilai2').value
+            var hasil = Math.pow(nilai1, nilai2);
+            document.getElementById('hasil').innerHTML = hasil
+        }
+    </script>
+</body>
+</html>

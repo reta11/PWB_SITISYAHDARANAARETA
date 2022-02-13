@@ -8,7 +8,7 @@
 <!-- <link href="<?= BASEURL; ?>/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-white rounded">
     <div class="container">
         <a class="navbar-brand" href="<?= BASEURL; ?>">PHP MVC</a>
 
@@ -17,8 +17,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" href="<?= BASEURL; ?>">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="<?= BASEURL; ?>">Home <span class="sr-only"></span></a>
+                <a class="nav-link" href="<?= BASEURL; ?>/mahasiswa">Mahasiswa</a>
                 <a class="nav-link" href="<?= BASEURL; ?>/about">About</a>
+                <a class="nav-link" href="<?= BASEURL; ?>/about/page">Pages</a>
             </div>
         </div>
     </div>
